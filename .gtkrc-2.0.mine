@@ -1,0 +1,7 @@
+# Set default font to a reasonable size
+style "font"
+{
+	font_name = "sans 8"
+}
+widget_class "*" style "font"
+gtk-font-name="sans 8"
