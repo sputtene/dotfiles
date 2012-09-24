@@ -1,0 +1,36 @@
+[user]
+    name = Sven Putteneers
+    email = @@@email address@@@
+
+[color]
+    ui = auto
+[color "branch"]
+    current = white bold
+    local = white
+    remote = cyan
+    plain = yellow
+[color "diff"]
+    plain = white
+    meta = white bold
+    frag = magenta bold
+    func = yellow bold
+    old = red
+    new = green
+    commit = yellow bold
+    whitespace = red reverse
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+    branch = white bold
+
+[core]
+    pager =
+
+[push]
+    default = tracking
+
+[alias]
+    wdiff = diff --color-words
+    l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr) %C(bold white)<%an>%Creset' --abbrev-commit --date=relative
+
