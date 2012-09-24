@@ -1,0 +1,36 @@
+# Re.pl config file
+
+use warnings;
+use strict;
+
+use 5.010;
+
+# Load some plugins
+load_plugin qw(
+	LexEnv
+	History
+	Colors
+);
+
+load_plugin qw(
+	MultiLine::PPI
+	Packages
+	FancyPrompt
+);
+
+
+#load_plugin qw(
+#	ReadLineHistory -> can't use this, because of incompatible version of Term::ReadLine
+#);
+
+load_plugin qw(
+	Completion
+	CompletionDriver::Globals
+	CompletionDriver::INC
+	CompletionDriver::Keywords
+	CompletionDriver::LexEnv
+	CompletionDriver::Methods
+);
+
+# Simplify prompt
+package main;
