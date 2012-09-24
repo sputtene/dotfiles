@@ -1,3 +1,83 @@
-# Ignore non-dotfiles in home directory
+# Only consider dotfiles, unless they end with .local or are
+# backup files.
 /*
 !.*
+.*.local
+.*.bak
+.*.orig
+
+# Ignore this repo otherwise the universe might implode :)
+.dotfiles.git/
+
+# Don't consider the following files. They contain sensitive
+# information or information that is only relevant locally.
+.AbiSuite/
+.ICEauthority
+.VirtualBox/
+.Xauthority
+.adobe/
+.bash_history
+.cache/
+
+# unblock prefs/ ?
+.cpan/
+.cpanm/
+.dbus/
+.dmrc
+.esd_auth
+
+.fluxbox/*
+!.fluxbox/keys
+!.fluxbox/overlay
+!.fluxbox/startup
+
+.fontconfig/
+.gconf/
+.gconfd/
+.gegl-0.0/
+.gimp-2.6/
+.gitconfig
+.gitk
+.gksu.lock
+.gnome2/
+.gnupg/
+.gnuplot_history
+.gstreamer-0.10/
+.gtk-bookmarks
+.icedtea/
+.icedteaplugin/
+.java/
+.lesshst
+.lftp/
+.libreoffice/
+.links2/links.his
+.local/
+.macromedia/
+.mozilla/
+.nv/
+.nvidia-settings-rc
+.openarena/
+.pam_environment
+.perlbrew/
+.phoronix-test-suite/
+.pki/
+.pulse/
+.pulse-cookie
+.purple/
+.remmina/
+.rpmdb/
+.ssh/
+.subversion/
+.sudo_as_admin_successful
+.synaptic/
+.thumbnails/
+.thunderbird/
+.tsclient/
+.vimbackup/
+.viminfo
+.vimswap/
+.vimviews/
+.virt-manager/
+.wine/
+.wmWeatherReports/
+.xsession-errors*
