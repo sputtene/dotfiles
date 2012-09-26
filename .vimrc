@@ -337,6 +337,7 @@
 
         " and make sure that it doesn't break supertab
         let g:SuperTabCrMapping = 0
+        let g:SuperTabDefaultCompletionType = "context"
     " }
 
     " ShowMarks {
