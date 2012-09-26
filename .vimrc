@@ -280,6 +280,11 @@
 " }
 
 " Plugins {
+     " FuzzyFinder {
+         map <leader>f :FufFileWithCurrentBufferDir **/<C-M>
+         map <leader>b :FufBuffer<C-M>
+     " }
+
     " OmniComplete {
         " Automatically set up completion for all known types
         if has("autocmd") && exists("+omnifunc")
@@ -339,24 +344,25 @@
         let g:SuperTabDefaultCompletionType = "context"
     " }
 
+    " PowerLine {
+        let g:Powerline_symbols = 'unicode'
+    " }
+
     " ShowMarks {
         let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.'`^<>[]{}()\""
         " Show marks if buffer is not readonly
         let g:showmarks_enable = 1
         let g:showmarks_ignore_type = 'hmpqr'
 
-        " For marks a-z
-        highlight ShowMarksHLl gui=bold guifg=DarkBlue   guibg=Black cterm=bold ctermfg=LightBlue  ctermbg=Black
-        " For marks A-Z
-        highlight ShowMarksHLu gui=bold guifg=DarkRed    guibg=Black cterm=bold ctermfg=DarkRed    ctermbg=Black
-        " For all other marks
-        highlight ShowMarksHLo gui=bold guifg=DarkYellow guifg=Black cterm=bold ctermfg=DarkYellow ctermbg=Black
-        " For multiple marks on the same line.
-        highlight ShowMarksHLm gui=bold guifg=DarkGreen  guibg=Black cterm=bold ctermfg=DarkGreen  ctermbg=Black
+        highlight ShowMarksHLl gui=bold guifg=LightBlue  guibg=Black cterm=bold ctermfg=LightBlue  ctermbg=black    " For marks a-z
+        highlight ShowMarksHLu gui=bold guifg=DarkRed    guibg=Black cterm=bold ctermfg=DarkRed    ctermbg=Black    " For marks A-Z
+        highlight ShowMarksHLo gui=bold guifg=DarkYellow guifg=Black cterm=bold ctermfg=DarkYellow ctermbg=Black    " For all other marks
+        highlight ShowMarksHLm gui=bold guifg=DarkGreen  guibg=Black cterm=bold ctermfg=DarkGreen  ctermbg=Black    " For multiple marks on the same line.
     " }
 
-    " PowerLine {
-        let g:Powerline_symbols = 'unicode'
+    " ShowPairs {
+        hi default ShowPairsHL  cterm=bold,reverse,italic gui=bold,reverse,italic
+        hi default ShowPairsHLp cterm=bold,reverse,italic gui=bold,reverse,italic
     " }
 
     " Supertab {
@@ -381,11 +387,6 @@
         let g:ctags_statusline=1
         " Override how taglist does javascript
         let g:tlist_javascript_settings = 'javascript;f:function;c:class;m:method;p:property;v:global'
-     " }
-
-     " FuzzyFinder {
-         map <leader>f :FufFileWithCurrentBufferDir **/<C-M> 
-         map <leader>b :FufBuffer<C-M>
      " }
 
     " Misc {
