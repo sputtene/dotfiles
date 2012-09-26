@@ -440,7 +440,7 @@
 function! InitializeDirectories()
   let separator = "."
   let parent = $HOME
-  let prefix = '.vim'
+  let prefix = '.vim/'
   let dir_list = {
               \ 'backup': 'backupdir',
               \ 'views': 'viewdir',
