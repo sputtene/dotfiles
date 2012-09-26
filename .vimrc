@@ -191,12 +191,10 @@
     set scrolloff=3     " context lines to keep above and below cursor
 
     set list            " show various invisible markers
-    if ((&encoding == "utf-8") || has("gui_running"))
-        set listchars=tab:\╎\ ,trail:·,extends:…,eol:↵,nbsp:‗
-        set listchars+=precedes:«,extends:»     " displayed when nowrap is set
+    if ((&termencoding ==# 'utf-8') || (&encoding == "utf-8") || has("gui_running"))
+        let &listchars="tab:\u254e\u00b7,trail:\u2022,extends:\u2026,eol:\u21b5,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
     else
-        set listchars=tab:\|\ ,trail:.,extends:>,nbsp:_
-        set listchars+=precedes:<,extends:>
+        set listchars=tab:\|\ ,trail:.,extends:>,eol:$,nbsp:_,precedes:<,extends:>
     endif
 " }
 
