@@ -51,6 +51,7 @@
     set nomore                      " don't pause when screen is full
 
     set backup                      " backups are nice ...
+    set undofile                    " ... and so is persistent undo
 
     set spelllang=en,nl              " English and Dutch word lists
     set nospell                      " spell checking is enabled depending on filetype
@@ -444,7 +445,8 @@ function! InitializeDirectories()
   let dir_list = {
               \ 'backup': 'backupdir',
               \ 'views': 'viewdir',
-              \ 'swap': 'directory' }
+              \ 'swap': 'directory',
+              \ 'undo': 'undodir' }
 
   for [dirname, settingname] in items(dir_list)
       let directory = parent . '/' . prefix . dirname . "/"
