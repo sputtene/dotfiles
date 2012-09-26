@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vimbuddy.vim"]
 	path = .vim/bundle/vimbuddy.vim
 	url = https://github.com/vim-scripts/vimbuddy.vim.git
+[submodule ".vim/bundle/ShowPairs"]
+	path = .vim/bundle/ShowPairs
+	url = https://github.com/vim-scripts/ShowPairs.git
