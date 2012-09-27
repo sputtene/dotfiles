@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/sven/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+# Polkit security manager
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+# Start gnome-keyring-daemon to prevent warnings such as:
+#   WARNING: gnome-keyring:: couldn't connect to: /tmp/keyring-qYwA5u/pkcs11: No such file or directory
+eval $(gnome-keyring-daemon --start)
+
+gkrellm -w &    # hawt system info
+update-manager &    # too lazy to check for updates manually
+nm-applet & # unfortunately gkrellm doesn't tell us when the network cable is out
+gnome-do &
+
+# Make the screen be more eye friendly
+#fluxgui &
+gtk-redshift &
+
+xset dpms $((11 * 60)) 0 $((15 * 60))   # blank screen after 11min (gives 1min grace period before screen gets locked); turn off screen after 15min
+xautolock -locker lock_screen.sh -nowlocker lock_screen.sh -corners 0+-0 -time 12 & # automatically lock screen after 12 minutes of inactivity
+update-notifier &   # I'm too lazy to check for updates myself
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/sven/.fluxbox/log"
