@@ -18,7 +18,7 @@
 	url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/ctx"]
 	path = .vim/bundle/ctx
-	url = git://github.com/vim-scripts/ctx.git
+	url = git@github.com:svennieboy/ctx.git
 [submodule ".vim/bundle/perl-support.vim"]
 	path = .vim/bundle/perl-support.vim
 	url = https://github.com/vim-scripts/perl-support.vim.git
