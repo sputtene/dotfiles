@@ -72,10 +72,13 @@
 .thumbnails/
 .thunderbird/
 .tsclient/
-.vimbackup/
+
+.vim/backup/
+.vim/undo/
+.vim/swap/
+.vim/views/
 .viminfo
-.vimswap/
-.vimviews/
+
 .virt-manager/
 .wine/
 .wmWeatherReports/
