@@ -1,0 +1,6 @@
+! The following line will prevent styles from setting the background.
+! background: none
+
+! My titlebar :)
+session.screen0.titlebar.left:	MenuIcon Stick
+session.screen0.titlebar.right:	Minimize Maximize Close
