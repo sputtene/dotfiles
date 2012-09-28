@@ -17,6 +17,7 @@
 # information or information that is only relevant locally.
 .AbiSuite/
 .ICEauthority
+.Private
 .VirtualBox/
 .Xauthority
 .adobe/
@@ -28,6 +29,7 @@
 .cpanm/
 .dbus/
 .dmrc
+.ecryptfs
 .esd_auth
 
 .fluxbox/*
