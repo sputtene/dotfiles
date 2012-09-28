@@ -171,7 +171,7 @@ export EDITOR=vim
 
 # Set up perlbrew environment
 PERLBREW="~/perl5/perlbrew/etc/bashrc"
-[ -x "$PERLBREW" ] && source $PERLBREW
+[ -r "$PERLBREW" ] && source $PERLBREW
 
 # Use Vim as man pager
 export MANPAGER="/bin/sh -c \"unset PAGER ;                 \
