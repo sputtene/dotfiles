@@ -27,8 +27,7 @@
     " The next 3 lines ensure that the ~/.vim/bundle/ system works
         runtime bundle/vim-pathogen/autoload/pathogen.vim
         silent! call pathogen#infect()
-        "silent! call pathogen#helptags()
-        "silent! call pathogen#runtime_append_all_bundles()
+        silent! call pathogen#helptags()
     " }
 " }
 
