@@ -88,4 +88,5 @@
 .virt-manager/
 .wine/
 .wmWeatherReports/
+.tilda/locks/
 .xsession-errors*
