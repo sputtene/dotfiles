@@ -111,6 +111,8 @@
 
         highlight VertSplit term=NONE cterm=NONE gui=NONE                           " Unfatten vertical split lines
 
+        highlight NonText   ctermfg=DarkGrey
+
         " Spelling error highlighting
         highlight SpellBad   cterm=bold,underline,italic ctermbg=DarkRed "ctermfg=LightRed
         highlight SpellCap   cterm=bold,underline,italic
@@ -196,8 +198,10 @@
     if ((&termencoding ==# 'utf-8') || (&encoding == "utf-8") || has("gui_running"))
         let &listchars="tab:\u2506\ ,trail:\u2022,extends:\u2026,eol:\u21b5,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
         let &fillchars="vert:\u2502,fold:\u257c"
+        let &showbreak="\u2026   "
     else
         set listchars=tab:\|\ ,trail:.,extends:>,eol:$,nbsp:_,precedes:<,extends:>
+        let &showbreak="+++ "
     endif
 " }
 
