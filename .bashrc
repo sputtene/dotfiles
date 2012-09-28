@@ -170,7 +170,8 @@ export LC_COLLATE=C # Fix 'natural' sorting order for ls and friends
 export EDITOR=vim
 
 # Set up perlbrew environment
-source ~/perl5/perlbrew/etc/bashrc
+PERLBREW="~/perl5/perlbrew/etc/bashrc"
+[ -x "$PERLBREW" ] && source $PERLBREW
 
 # Use Vim as man pager
 export MANPAGER="/bin/sh -c \"unset PAGER ;                 \
