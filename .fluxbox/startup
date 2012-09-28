@@ -34,7 +34,6 @@ eval $(gnome-keyring-daemon --start)
 gkrellm -w &        # system performance monitoring
 udisks-glue         # Auto-mount removable storage media
 gnome-do &          # quick command execution
-wicd-client &       # use wicd instead of network-manager
 update-notifier &   # too lazy to check for software updates myself ;)
 tilda &             # FPS alike console
 pnmixer &
