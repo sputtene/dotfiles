@@ -165,6 +165,10 @@ setxkbmap -model "$XKBMODEL" -layout "$XKBLAYOUT" -variant "$XKBVARIANT" -option
 xmodmap ~/.Xmodmap
 fi
 
+# Misc exports
+export LC_COLLATE=C # Fix 'natural' sorting order for ls and friends
+export EDITOR=vim
+
 # Set up perlbrew environment
 source ~/perl5/perlbrew/etc/bashrc
 
