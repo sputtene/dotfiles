@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/ShowPairs"]
 	path = .vim/bundle/ShowPairs
 	url = https://github.com/vim-scripts/ShowPairs.git
+[submodule ".vim/bundle/unicode.vim"]
+	path = .vim/bundle/unicode.vim
+	url = https://github.com/vim-scripts/unicode.vim.git
