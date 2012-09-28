@@ -1,0 +1,4 @@
+! Include all resources from .Xresources.d
+#include ".Xresources.d/Rxvt"
+#include ".Xresources.d/Xautolock"
+#include ".Xresources.d/Xlock"

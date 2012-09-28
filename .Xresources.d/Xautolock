@@ -1,0 +1,5 @@
+xautolock.time:		12
+xautolock.notify:	15
+xautolock.notifier:	notify-send
+xautolock.corners:	0+-0
+xautolock.cornerdelay:	2
