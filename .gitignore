@@ -16,21 +16,29 @@
 # Don't consider the following files. They contain sensitive
 # information or information that is only relevant locally.
 .AbiSuite/
+.FBReader/
 .ICEauthority
 .Private
+.Skype/
 .VirtualBox/
 .Xauthority
 .adobe/
+.apport-ignore.xml
+.audacity-data/
 .bash_history
 .cache/
+.clay/
 
 # unblock prefs/ ?
 .cpan/
 .cpanm/
+.cups/
 .dbus/
 .dmrc
+.dvdcss/
 .ecryptfs
 .esd_auth
+.fehbg
 
 .fluxbox/*
 !.fluxbox/keys
@@ -38,39 +46,57 @@
 !.fluxbox/startup
 
 .fontconfig/
+.fonts.conf
+.fonts/
 .gconf/
 .gconfd/
 .gegl-0.0/
 .gimp-2.6/
 .gitk
+.googleearth/
+.goutputstream-*
 .gksu.lock
 .gnome2/
 .gnupg/
 .gnuplot_history
 .gstreamer-0.10/
 .gtk-bookmarks
+.hplip/
+.ibam/
 .icedtea/
 .icedteaplugin/
 .java/
 .lesshst
 .lftp/
 .libreoffice/
-.links2/links.his
+.links2/
 .local/
 .macromedia/
+.mission-control/
 .mozilla/
 .nv/
 .nvidia-settings-rc
 .openarena/
+.opera/
+.openvpn/
+
+.pal/*
+!.pal/pal.conf
+
 .pam_environment
 .perlbrew/
+.pgadmin3
+.pgpass
 .phoronix-test-suite/
 .pki/
 .pulse/
 .pulse-cookie
 .purple/
+.qt/
 .remmina/
 .rpmdb/
+.sane/
+.smbc/
 .ssh/
 .subversion/
 .sudo_as_admin_successful
@@ -86,7 +112,10 @@
 .viminfo
 
 .virt-manager/
+.wicd/
 .wine/
+.wmpiki
 .wmWeatherReports/
 .tilda/locks/
 .xsession-errors*
+.yarssr/
