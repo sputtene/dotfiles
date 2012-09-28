@@ -1,3 +1,4 @@
+" http://www.vim.org/scripts/script.php?script_id=718
 " $VIMRUNTIME/plugin/ro-positioning.vim
     if exists("g:ro_positioning_loaded") | finish | endif
     let g:ro_positioning_loaded=1
@@ -51,4 +52,3 @@
 
     au BufEnter * :call s:RoBufEnter()
 " $VIMRUNTIME/plugin/ro-positioning.vim
-

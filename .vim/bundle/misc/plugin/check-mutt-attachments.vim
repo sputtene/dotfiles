@@ -3,6 +3,7 @@
 " by Hugo Haas <hugo@larve.net> - 20 June 2004
 " based on an idea by The Doctor What explained at
 " <mid:caq406$rq4$1@FreeBSD.csie.NCTU.edu.tw>
+" http://www.vim.org/scripts/download_script.php?src_id=3165
 autocmd BufUnload mutt-* call CheckAttachments()
 function! CheckAttachments()
   let l:english = 'attach\(ing\|ed\|ment\)\?'
