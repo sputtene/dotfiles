@@ -30,7 +30,6 @@
 [alias]
 	wdiff = diff --color-words
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr) %C(bold white)<%an>%Creset' --abbrev-commit --date=relative
-	home = !git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
 
 [giggle]
 	main-window-maximized = true
