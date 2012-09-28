@@ -1,32 +1,23 @@
-! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
-! check lines marked by 'FBCV13' if they are correctly updated
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
-!mouse actions added by fluxbox-update_configs
-OnTitlebar Move1 :StartMoving
-OnLeftGrip Move1 :StartResizing bottomleft
-OnRightGrip Move1 :StartResizing bottomright
-OnWindowBorder Move1 :StartMoving
-
 # click on the desktop to get menus
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 
 # scroll on the desktop to change workspaces
-OnDesktop Mouse4 :NextWorkspace
-OnDesktop Mouse5 :PrevWorkspace
+OnDesktop Mouse4 :PrevWorkspace
+OnDesktop Mouse5 :NextWorkspace
 
-# scroll on the toolbar to change workspaces
-OnToolbar Mouse4 :NextWorkspace
-OnToolbar Mouse5 :PrevWorkspace
-
-# Enable dragging of windows via titlebar ( PRT )
-OnTitlebar Mouse1 :StartMoving
+# scroll on the toolbar to change current window
+OnToolbar Mouse4 :PrevWindow {static groups} (iconhidden=no)
+OnToolbar Mouse5 :NextWindow {static groups} (iconhidden=no)
 
 # alt + left/right click to move/resize a window
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindowBorder Move1 :StartMoving
+
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
 
 # alt + middle click to lower the window
 OnWindow Mod1 Mouse2 :Lower
@@ -34,48 +25,44 @@ OnWindow Mod1 Mouse2 :Lower
 # control-click a window's titlebar and drag to attach windows
 OnTitlebar Control Mouse1 :StartTabbing
 
-# middle click on a window's titlebar and drag to attach windows
-OnTitlebar Mouse2 :StartTabbing
-
-# double middle click on a window's titlebar to lower
-OnTitlebar Double Mouse2 :Lower
-
 # double click on the titlebar to shade
 OnTitlebar Double Mouse1 :Shade
 
-# shift + middle click on the titlebar to lower
-OnTitlebar Shift Mouse2 :Lower
+# left click on the titlebar to move the window
+OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
+OnTitlebar Move1  :StartMoving
+
+# middle click on the titlebar to lower
+OnTitlebar Mouse2 :Lower
 
 # right click on the titlebar for a menu of options
 OnTitlebar Mouse3 :WindowMenu
 
 # alt-tab
-Mod1 Tab :NextWindow {groups} (workspace=[current])  !! FBCV13 !!
-Mod1 Shift Tab :PrevWindow {groups} (workspace=[current])  !! FBCV13 !!
+Mod1 Tab    :NextWindow {groups} (workspace=[current])
+Mod1 Shift Tab  :PrevWindow {groups} (workspace=[current])
 
 # cycle through tabs in the current window
-Mod4 Tab :NextTab
-Mod4 Shift Tab :PrevTab
+Mod4 Tab    :NextTab
+Mod4 Shift Tab  :PrevTab
 
-# go to a specific tab in the current window
-Control 1 :Tab 1
-Control 2 :Tab 2
-Control 3 :Tab 3
-Control 4 :Tab 4
-Control 5 :Tab 5
-Control 6 :Tab 6
-Control 7 :Tab 7
-Control 8 :Tab 8
-Control 9 :Tab 9
+# open a dialog to run programs
+Control Mod1 F2 :Exec fbrun
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+Mod3 Left   :Exec amixer sset Master,0 1-
+Mod3 Right  :Exec amixer sset Master,0 1+
 
-# open the window menu
-Mod1 space :WindowMenu
+#None XF86AudioLowerVolume  :Exec amixer sset Master,0 1-
+#None XF86AudioRaiseVolume  :Exec amixer sset Master,0 1+
+#None XF86AudioMute     :Exec amixer sset Master,0 toggle
+
+# current window commands
+Mod3 F      :Fullscreen
+Mod3 M      :Maximize
+Mod3 Shift M    :Minimize
+
 
 # exit fluxbox
 Control Mod1 Delete :Exit
@@ -84,73 +71,43 @@ Control Mod1 Delete :Exit
 Control Mod1 Left :PrevWorkspace
 Control Mod1 Right :NextWorkspace
 
-# send the current window to previous/next workspace
-Mod4 Left :SendToPrevWorkspace
-Mod4 Right :SendToNextWorkspace
-
-# send the current window and follow it to previous/next workspace
-Control Mod4 Left :TakeToPrevWorkspace
-Control Mod4 Right :TakeToNextWorkspace
-
 # change to a specific workspace
-Mod1 F1 :Workspace 1
-Mod1 F2 :Workspace 2
-Mod1 F3 :Workspace 3
-Mod1 F4 :Workspace 4
-Mod1 F5 :Workspace 5
-Mod1 F6 :Workspace 6
-Mod1 F7 :Workspace 7
-Mod1 F8 :Workspace 8
-Mod1 F9 :Workspace 9
-Mod1 F10 :Workspace 10
-Mod1 F11 :Workspace 11
-Mod1 F12 :Workspace 12
-
-# send the current window to a specific workspace
-Mod4 F1 :SendToWorkspace 1
-Mod4 F2 :SendToWorkspace 2
-Mod4 F3 :SendToWorkspace 3
-Mod4 F4 :SendToWorkspace 4
-Mod4 F5 :SendToWorkspace 5
-Mod4 F6 :SendToWorkspace 6
-Mod4 F7 :SendToWorkspace 7
-Mod4 F8 :SendToWorkspace 8
-Mod4 F9 :SendToWorkspace 9
-Mod4 F10 :SendToWorkspace 10
-Mod4 F11 :SendToWorkspace 11
-Mod4 F12 :SendToWorkspace 12
-
-# send the current window and change to a specific workspace
-Control Mod4 F1 :TakeToWorkspace 1
-Control Mod4 F2 :TakeToWorkspace 2
-Control Mod4 F3 :TakeToWorkspace 3
-Control Mod4 F4 :TakeToWorkspace 4
-Control Mod4 F5 :TakeToWorkspace 5
-Control Mod4 F6 :TakeToWorkspace 6
-Control Mod4 F7 :TakeToWorkspace 7
-Control Mod4 F8 :TakeToWorkspace 8
-Control Mod4 F9 :TakeToWorkspace 9
-Control Mod4 F10 :TakeToWorkspace 10
-Control Mod4 F11 :TakeToWorkspace 11
-Control Mod4 F12 :TakeToWorkspace 12
-
-
-# My keys
-Mod4 b :Exec fbrun
-Mod4 c :Exec random_urxvt
-Mod4 f :Exec thunar
-Mod4 l :Exec xautolock -locknow
-Mod4 o :Exec firefox
-Shift Mod4 o :ExecCommand links2 -g "`xclip -o`"
+Mod4 F1 :Workspace 1
+Mod4 F2 :Workspace 2
+Mod4 F3 :Workspace 3
+Mod4 F4 :Workspace 4
+Mod4 F5 :Workspace 5
+Mod4 F6 :Workspace 6
+Mod4 F7 :Workspace 7
+Mod4 F8 :Workspace 8
+Mod4 F9 :Workspace 9
+Mod4 F10 :Workspace 10
+Mod4 F11 :Workspace 11
+Mod4 F12 :Workspace 12
 
 # Screenshots
 None Print :Exec scrot -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
 Control Print :Exec scrot -b -u -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
 
-# Window commands
-Mod3 Shift m :Minimize
-Mod3 m :Maximize
+# Backlight brightness
+None XF86MonBrightnessUp    :Exec xbacklight -set $(($(xbacklight -get | cut -d. -f1) + 5))
+None XF86MonBrightnessDown  :Exec xbacklight -set $(($(xbacklight -get | cut -d. -f1) - 5))
 
-# Change backlight brightness
-Mod3 b :ToggleCmd {ToggleCmd {Exec xbacklight -set 0} {xbacklight -set 60}} {ToggleCmd {xbacklight -set 30} {xbacklight -set 100}}
+# Power management
+#None Help  :Exec sudo pm-suspend
+#Control Help   :Exec sudo pm-suspend-hybrid
+None Help   :Exec sudo s2ram -f
+Shift Help  :Exec sudo s2both
+Control Help    :Exec sudo s2disk
 
+# Commands
+Mod4 C  :Exec x-terminal-emulator
+Mod4 F  :Exec thunar
+Mod4 L  :Exec xautolock -locknow
+Mod4 O  :Exec firefox "`xclip -o`"
+Shift Mod4 O    :Exec links2 -g "`xclip -o`"
+Mod4 R  :Exec fbrun
+Mod4 T  :Exec links2 -g 'http://teveblad.be/ndl/grid18.asp?Taal=N&dag=vandaag18'
+
+# Backlight control
+Mod3 B  :ToggleCmd {ToggleCmd {Exec xbacklight -set 0} {xbacklight -set 60}} {ToggleCmd {xbacklight -set 30} {xbacklight -set 100}}

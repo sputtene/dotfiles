@@ -4,8 +4,11 @@
 #
 # Lines starting with a '#' are ignored.
 
+# Load resources
+xrdb -merge "$HOME/.Xresources"
+
 # Change your keymap:
-xmodmap "/home/sven/.Xmodmap"
+xmodmap "$HOME/.Xmodmap"
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
@@ -15,28 +18,38 @@ xmodmap "/home/sven/.Xmodmap"
 # wmsmixer -w &
 # idesk &
 
+# Load local settings and programs
+[ -r "$HOME/.fluxbox/startup.local" ] && source "$HOME/.fluxbox.startup.local"
+
 # Polkit security manager
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
 # Start gnome-keyring-daemon to prevent warnings such as:
 #   WARNING: gnome-keyring:: couldn't connect to: /tmp/keyring-qYwA5u/pkcs11: No such file or directory
 eval $(gnome-keyring-daemon --start)
 
-gkrellm -w &    # hawt system info
-update-manager &    # too lazy to check for updates manually
-nm-applet & # unfortunately gkrellm doesn't tell us when the network cable is out
-gnome-do &
+# Fancy transparency and fade effects
+#xcompmgr -cCf -r10 -o.65 -l-11 -t-11 -I.05 -O.05 &
 
-# Make the screen be more eye friendly
-#fluxgui &
-gtk-redshift &
+gkrellm -w &        # system performance monitoring
+udisks-glue         # Auto-mount removable storage media
+gnome-do &          # quick command execution
+wicd-client &       # use wicd instead of network-manager
+update-notifier &   # too lazy to check for software updates myself ;)
+tilda &             # FPS alike console
+pnmixer &
+gtk-redshift &      # change screen colour temperature with time of the day
 
+setxkbmap -model "pc105" -layout "us,be" -variant "dvorak," -option "compose:menu,grp:shifts_toggle"    # /etc/defaults/keyboard is not loaded anymore, so do this ourself
+xset r rate 300 100 # Fast keyboard repeat rate
+
+# Screen saver
 xset dpms $((11 * 60)) 0 $((15 * 60))   # blank screen after 11min (gives 1min grace period before screen gets locked); turn off screen after 15min
 xautolock -locker lock_screen.sh -nowlocker lock_screen.sh -corners 0+-0 -time 12 & # automatically lock screen after 12 minutes of inactivity
-update-notifier &   # I'm too lazy to check for updates myself
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-exec fluxbox
+#exec fluxbox
 # or if you want to keep a log:
-# exec fluxbox -log "/home/sven/.fluxbox/log"
+exec fluxbox -log "/home/svenniboy/.fluxbox/log"
