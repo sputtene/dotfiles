@@ -352,6 +352,7 @@
 
     " PowerLine {
         let g:Powerline_symbols = 'unicode'
+        let g:Powerline_dividers_override = ["\u259b", "\u2571", "\u259c", "\u2572"]
     " }
 
     " ShowMarks {
