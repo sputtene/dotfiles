@@ -353,6 +353,18 @@
     " PowerLine {
         let g:Powerline_symbols = 'unicode'
         let g:Powerline_dividers_override = ["\u259b", "\u2571", "\u259c", "\u2572"]
+        let g:Powerline_stl_path_style = 'short'
+
+        " Shorten mode strings
+        let g:Powerline_mode_n  = ' N '
+        let g:Powerline_mode_i  = ' I '
+        let g:Powerline_mode_R  = ' R '
+        let g:Powerline_mode_v  = ' V '
+        let g:Powerline_mode_V  = " V\u2013 "
+        let g:Powerline_mode_cv = " V\u25aa "
+        let g:Powerline_mode_s  = ' S '
+        let g:Powerline_mode_S  = " S\u2013 "
+        let g:Powerline_mode_cs = " S\u25aa "
     " }
 
     " ShowMarks {
