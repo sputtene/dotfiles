@@ -19,7 +19,9 @@ xmodmap "$HOME/.Xmodmap"
 # idesk &
 
 # Load local settings and programs
-[ -r "$HOME/.fluxbox/startup.local" ] && source "$HOME/.fluxbox/startup.local"
+if [ -r "$HOME/.fluxbox/startup.local" ]; then
+    /bin/sh "$HOME/.fluxbox/startup.local"
+fi
 
 # Polkit security manager
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
