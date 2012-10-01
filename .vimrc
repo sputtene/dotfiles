@@ -365,6 +365,8 @@
         let g:Powerline_mode_s  = ' S '
         let g:Powerline_mode_S  = " S\u2013 "
         let g:Powerline_mode_cs = " S\u25aa "
+
+        call Pl#Theme#InsertSegment('charcode', 'after', 'filetype')
     " }
 
     " ShowMarks {
