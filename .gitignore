@@ -105,6 +105,7 @@
 .thunderbird/
 .tsclient/
 
+.vim/.netrwhist
 .vim/backup/
 .vim/undo/
 .vim/swap/
