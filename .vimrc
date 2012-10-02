@@ -20,6 +20,7 @@
         " across (heterogeneous) systems easier.
         if has('win32') || has('win64')
             set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+            set encoding=utf-8
         endif
     " }
 
@@ -98,7 +99,11 @@
 " Vim UI {
     " set color scheme {
         if has("gui_running")
-            set guifont=Envy\ Code\ R\ 8
+            if has("win32") || has("win64")
+                set guifont=Envy_Code_R:h10
+            else
+                set guifont=Envy\ Code\ R\ 8
+            endif
             colorscheme darkblue2
         else
             colorscheme matrix
