@@ -221,20 +221,12 @@
     set expandtab       " expand \t to spaces
 
     " Perform space <-> tab conversion on the fly to get indent guides as defined in listchars
-    " Don't do this for non-modifiable and readonly files to prevent warnings
-    " about changing a readonly buffer.
-    " Don't perform conversion on Makefiles either, \t really matters there!
-    if (&modifiable && !&readonly
-            \ && (&filetype != "automake") && (&filetype != "make")
-            \ && (&filetype != "c") && (&filetype != "cpp")
-            \ && (&filetype != "diff") && (&filetype != "diff"))
-"       augroup IndentGuides
-"           autocmd!
-"           autocmd BufReadPost * setlocal noexpandtab | retab! | endif
-"           autocmd BufWritePre * setlocal expandtab | retab! | endif
-"           autocmd BufWritePost * setlocal noexpandtab | retab! | endif
-"       augroup END
-    endif
+    augroup IndentGuides
+        autocmd!
+        autocmd BufReadPost  * call IndentGuides(1)
+        autocmd BufWritePre  * call IndentGuides(0)
+        autocmd BufWritePost * call IndentGuides(1)
+    augroup END
 
     set cindent             " C style indentation
 
@@ -490,6 +482,25 @@ function! InitializeDirectories()
   endfor
 endfunction
 call InitializeDirectories()
+
+function! IndentGuides(create)
+    " Don't perform space<->tab for non-modifiable or readonly files
+    " to prevent warnings about changing a readonly buffer.
+    " Don't perform conversion on Makefiles either, \t really matters!
+    if (!&modifiable || &readonly
+            \ || (&filetype == "automake") || (&filetype == "make")
+            \ || (&filetype == "diff"))
+        return
+    endif
+
+    if (a:create)
+        setlocal noexpandtab
+        retab!
+    else
+        setlocal expandtab
+        retab!
+    endif
+endfunction
 
 function! NERDTreeInitAsNeeded()
     redir => bufoutput
