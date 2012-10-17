@@ -218,7 +218,7 @@
     set tabstop=4       " ASCII character 9 is displayed as 4 spaces
     set softtabstop=4   " let backspace delete indent
     set smarttab        " insert 'shiftwidth' blanks when <Tab> is pressed in front of a line
-	set expandtab		" expand \t to spaces
+    set expandtab       " expand \t to spaces
 
     " Perform space <-> tab conversion on the fly to get indent guides as defined in listchars
     " Don't do this for non-modifiable and readonly files to prevent warnings
