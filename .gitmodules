@@ -7,6 +7,7 @@
 [submodule ".vim/bundle/ShowMarks"]
     path = .vim/bundle/ShowMarks
     url = https://github.com/vim-scripts/ShowMarks.git
+    ignore = all
 [submodule ".vim/bundle/Vim-R-plugin"]
     path = .vim/bundle/Vim-R-plugin
     url = https://github.com/vim-scripts/Vim-R-plugin.git
@@ -22,6 +23,7 @@
 [submodule ".vim/bundle/perl-support.vim"]
     path = .vim/bundle/perl-support.vim
     url = https://github.com/vim-scripts/perl-support.vim.git
+    ignore = all
 [submodule ".vim/bundle/supertab"]
     path = .vim/bundle/supertab
     url = https://github.com/ervandew/supertab.git
@@ -46,6 +48,7 @@
 [submodule ".vim/bundle/ShowPairs"]
     path = .vim/bundle/ShowPairs
     url = https://github.com/vim-scripts/ShowPairs.git
+    ignore = all
 [submodule ".vim/bundle/unicode.vim"]
     path = .vim/bundle/unicode.vim
     url = https://github.com/vim-scripts/unicode.vim.git
