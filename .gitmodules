@@ -1,60 +1,63 @@
 [submodule ".vim/bundle/OmniCppComplete"]
-	path = .vim/bundle/OmniCppComplete
-	url = https://github.com/vim-scripts/OmniCppComplete.git
+    path = .vim/bundle/OmniCppComplete
+    url = https://github.com/vim-scripts/OmniCppComplete.git
 [submodule ".vim/bundle/SearchComplete"]
-	path = .vim/bundle/SearchComplete
-	url = https://github.com/vim-scripts/SearchComplete.git
+    path = .vim/bundle/SearchComplete
+    url = https://github.com/vim-scripts/SearchComplete.git
 [submodule ".vim/bundle/ShowMarks"]
-	path = .vim/bundle/ShowMarks
-	url = https://github.com/vim-scripts/ShowMarks.git
+    path = .vim/bundle/ShowMarks
+    url = https://github.com/vim-scripts/ShowMarks.git
+    ignore = all
 [submodule ".vim/bundle/Vim-R-plugin"]
-	path = .vim/bundle/Vim-R-plugin
-	url = https://github.com/vim-scripts/Vim-R-plugin.git
+    path = .vim/bundle/Vim-R-plugin
+    url = https://github.com/vim-scripts/Vim-R-plugin.git
 [submodule ".vim/bundle/a.vim"]
-	path = .vim/bundle/a.vim
-	url = https://github.com/vim-scripts/a.vim.git
+    path = .vim/bundle/a.vim
+    url = https://github.com/vim-scripts/a.vim.git
 [submodule ".vim/bundle/ack.vim"]
-	path = .vim/bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
+    path = .vim/bundle/ack.vim
+    url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/ctx"]
-	path = .vim/bundle/ctx
-	url = https://github.com/svennieboy/ctx.git
+    path = .vim/bundle/ctx
+    url = https://github.com/svennieboy/ctx.git
 [submodule ".vim/bundle/perl-support.vim"]
-	path = .vim/bundle/perl-support.vim
-	url = https://github.com/vim-scripts/perl-support.vim.git
+    path = .vim/bundle/perl-support.vim
+    url = https://github.com/vim-scripts/perl-support.vim.git
+    ignore = all
 [submodule ".vim/bundle/supertab"]
-	path = .vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
+    path = .vim/bundle/supertab
+    url = https://github.com/ervandew/supertab.git
 [submodule ".vim/bundle/taglist.vim"]
-	path = .vim/bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
+    path = .vim/bundle/taglist.vim
+    url = https://github.com/vim-scripts/taglist.vim.git
 [submodule ".vim/bundle/vim-afterimage"]
-	path = .vim/bundle/vim-afterimage
-	url = https://github.com/tpope/vim-afterimage.git
+    path = .vim/bundle/vim-afterimage
+    url = https://github.com/tpope/vim-afterimage.git
 [submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+    path = .vim/bundle/vim-fugitive
+    url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
+    path = .vim/bundle/vim-pathogen
+    url = https://github.com/tpope/vim-pathogen.git
 [submodule ".vim/bundle/vim-powerline"]
-	path = .vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+    path = .vim/bundle/vim-powerline
+    url = https://github.com/Lokaltog/vim-powerline.git
 [submodule ".vim/bundle/vimbuddy.vim"]
-	path = .vim/bundle/vimbuddy.vim
-	url = https://github.com/vim-scripts/vimbuddy.vim.git
+    path = .vim/bundle/vimbuddy.vim
+    url = https://github.com/vim-scripts/vimbuddy.vim.git
 [submodule ".vim/bundle/ShowPairs"]
-	path = .vim/bundle/ShowPairs
-	url = https://github.com/vim-scripts/ShowPairs.git
+    path = .vim/bundle/ShowPairs
+    url = https://github.com/vim-scripts/ShowPairs.git
+    ignore = all
 [submodule ".vim/bundle/unicode.vim"]
-	path = .vim/bundle/unicode.vim
-	url = https://github.com/vim-scripts/unicode.vim.git
+    path = .vim/bundle/unicode.vim
+    url = https://github.com/vim-scripts/unicode.vim.git
 [submodule ".vim/bundle/vim-matchit"]
-	path = .vim/bundle/vim-matchit
-	url = https://github.com/mhz/vim-matchit.git
+    path = .vim/bundle/vim-matchit
+    url = https://github.com/mhz/vim-matchit.git
 [submodule ".vim/bundle/L9"]
-	path = .vim/bundle/L9
-	url = https://github.com/vim-scripts/L9.git
+    path = .vim/bundle/L9
+    url = https://github.com/vim-scripts/L9.git
 [submodule ".vim/bundle/FuzzyFinder"]
-	path = .vim/bundle/FuzzyFinder
-	url = https://github.com/vim-scripts/FuzzyFinder.git
+    path = .vim/bundle/FuzzyFinder
+    url = https://github.com/vim-scripts/FuzzyFinder.git
