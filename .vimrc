@@ -106,7 +106,8 @@
             endif
             colorscheme darkblue2
         else
-            colorscheme matrix
+            "colorscheme matrix
+            colorscheme darkblue2
         endif
 
         " Manually perfect some highlighting aspects
