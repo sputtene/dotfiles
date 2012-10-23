@@ -49,3 +49,12 @@
 [submodule ".vim/bundle/unicode.vim"]
 	path = .vim/bundle/unicode.vim
 	url = https://github.com/vim-scripts/unicode.vim.git
+[submodule ".vim/bundle/vim-matchit"]
+	path = .vim/bundle/vim-matchit
+	url = https://github.com/mhz/vim-matchit.git
+[submodule ".vim/bundle/L9"]
+	path = .vim/bundle/L9
+	url = https://github.com/vim-scripts/L9.git
+[submodule ".vim/bundle/FuzzyFinder"]
+	path = .vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
