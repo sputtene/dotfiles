@@ -31,7 +31,7 @@ Rxvt*shading:       40
 Rxvt*fading:        40
 
 ! fonts
-Rxvt*letterSpace:   -1
+Rxvt*letterSpace:   -2
 
 Rxvt*font:          xft:Envy Code R-9:antialias=false:style=Regular
 Rxvt*boldFont:      xft:Envy Code R-9:antialias=false:style=Bold
