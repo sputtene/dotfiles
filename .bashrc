@@ -184,11 +184,12 @@ export EDITOR=vim
 PERLBREW="~/perl5/perlbrew/etc/bashrc"
 [ -r "$PERLBREW" ] && source $PERLBREW
 
+
 # Use Vim as man pager
 export MANPAGER="/bin/sh -c \"unset PAGER ;                 \
     col -b -x |                                             \
-    vim -R                                                  \
-    -c 'set ft=man nomod nolist'                            \
+    vim -MRn                                                \
+    -c 'set ft=man nolist'                                  \
     -c 'map q :q<CR>'                                       \
     -c 'map <SPACE> <C-D>' -c 'map b <C-U>'                 \
     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>'  \

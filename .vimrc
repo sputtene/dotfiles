@@ -435,10 +435,13 @@
     augroup FileTypeSpecific
         autocmd!
 
-        " No decorations for manpages
+        " No decorations for manpages.
+        " Also ensure vim is not recursively invoked (man-db does this)
+        " when doing ctrl-[ on a man page reference
         autocmd FileType man
             \ setlocal nonumber |
-            \ setlocal foldcolumn=0
+            \ setlocal foldcolumn=0 |
+            \ let $MANPAGER=""
 
         " Muttng
         autocmd BufNewFile,BufRead muttng-*-\w\+,muttng\w\{6\} setf mail
