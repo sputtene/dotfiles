@@ -181,7 +181,7 @@ export LC_COLLATE=C # Fix 'natural' sorting order for ls and friends
 export EDITOR=vim
 
 # Set up perlbrew environment
-PERLBREW="~/perl5/perlbrew/etc/bashrc"
+PERLBREW="$HOME/perl5/perlbrew/etc/bashrc"
 [ -r "$PERLBREW" ] && source $PERLBREW
 
 
