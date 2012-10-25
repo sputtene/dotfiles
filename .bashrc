@@ -159,11 +159,22 @@ fi
 
 # Pandolin doesn't honour /etc/default/keyboard, so we do it ourself
 if test -z "$SSH_CONNECTION" \
-	&& test -n "$DISPLAY"; then
-source /etc/default/keyboard	# get keyboard settings
+    && test -n "$DISPLAY"; then
+source /etc/default/keyboard    # get keyboard settings
 setxkbmap -model "$XKBMODEL" -layout "$XKBLAYOUT" -variant "$XKBVARIANT" -option "$XKBOPTIONS"
 xmodmap ~/.Xmodmap
 fi
+
+## TODO: move these to a devel_mode() function
+# for developing: http://udrepper.livejournal.com/11429.html
+export MALLOC_CHECK_=3
+# The following can cause performance issues
+# so unset it before performance testing for example
+export MALLOC_PERTURB_=$(($RANDOM % 255 + 1))
+
+# Let me have core dumps
+ulimit -c unlimited
+
 
 # Misc exports
 export LC_COLLATE=C # Fix 'natural' sorting order for ls and friends
