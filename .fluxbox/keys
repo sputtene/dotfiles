@@ -90,8 +90,11 @@ None Print :Exec scrot -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
 Control Print :Exec scrot -b -u -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
 
 # Backlight brightness
-None XF86MonBrightnessUp    :Exec xbacklight -set $(($(xbacklight -get | cut -d. -f1) + 5))
-None XF86MonBrightnessDown  :Exec xbacklight -set $(($(xbacklight -get | cut -d. -f1) - 5))
+# My backlight has a strange way of incrementing/decrementing. The actual step size is 12.5%.
+# Decreasing with even 1% sets the backlight to the nearest lower value. Incrementing on the
+# other hand must happen with at least 12.5% to have any effect.
+None XF86MonBrightnessUp    :Exec xbacklight -inc 20 -time 0 -steps 1
+None XF86MonBrightnessDown  :Exec xbacklight -dec 10 -time 0 -steps 1
 
 # Power management
 #None Help  :Exec sudo pm-suspend
