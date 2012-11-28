@@ -201,7 +201,7 @@
 
     set list            " show various invisible markers
     if ((&termencoding ==# 'utf-8') || (&encoding == "utf-8") || has("gui_running"))
-        let &listchars="tab:\u2506\ ,trail:\u2022,extends:\u2026,eol:\u21b5,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
+        let &listchars="tab:\u2506\ ,trail:\u2022,extends:\u2026,eol:\u21b2,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
         let &fillchars="vert:\u2502,fold:\u257c"
         let &showbreak="\u2026   "
     else
