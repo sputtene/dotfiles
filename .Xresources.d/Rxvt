@@ -33,7 +33,7 @@ Rxvt*fading:        40
 ! fonts
 Rxvt*letterSpace:   -2
 
-Rxvt*font:          xft:Envy Code R-9:antialias=false:style=Regular
+Rxvt*font:          xft:Envy Code R-9:antialias=false:style=Regular,-misc-fixed-medium-r-semicondensed-*-13-*-*-*-*-*-iso8859-7,-misc-fixed-*-*-semicondensed-*-13-*-*-*-*-*-koi8-r
 Rxvt*boldFont:      xft:Envy Code R-9:antialias=false:style=Bold
 Rxvt*italicFont:    xft:Envy Code R-9:antialias=false:style=Italic
 
