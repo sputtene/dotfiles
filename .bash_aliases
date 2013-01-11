@@ -11,3 +11,8 @@ alias git='_git() { if [ `pwd` == "$HOME" ] ; then `which git` --git-dir=$HOME/.
 
 # Ack is better than grep
 alias ack='ack-grep'
+
+# Make head and tail use available screen size
+# Aso, more responsive tail -f
+alias head='head -n $(($LINES - 2))'
+alias tail='tail -n $(($LINES - 2)) -s.1'
