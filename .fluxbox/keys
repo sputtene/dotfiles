@@ -63,6 +63,8 @@ Mod3 F      :Fullscreen
 Mod3 M      :Maximize
 Mod3 Shift M    :Minimize
 
+Mod3 Tab        :SendToNextHead
+Mod3 Shift Tab  :SendToPrevHead
 
 # exit fluxbox
 Control Mod1 Delete :Exit
