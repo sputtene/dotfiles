@@ -2,5 +2,3 @@
 #include ".Xresources.d/Rxvt"
 #include ".Xresources.d/Xautolock"
 #include ".Xresources.d/Xlock"
-
-#include ".Xresources.d/Xresources.local"

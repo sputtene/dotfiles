@@ -6,6 +6,7 @@
 
 # Load resources
 xrdb -merge "$HOME/.Xresources"
+[ -r "$HOME/.Xresources.d/Xresources.local" ] && xrdb -override "$HOME/.Xresources.d/Xresources.local"
 
 # Change your keymap:
 xmodmap "$HOME/.Xmodmap"
