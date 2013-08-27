@@ -25,6 +25,9 @@
     " }
 
     " Setup Bundle Support {
+    " Powerline special configuration
+    set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
     " The next 3 lines ensure that the ~/.vim/bundle/ system works
         runtime bundle/vim-pathogen/autoload/pathogen.vim
         silent! call pathogen#infect()
