@@ -22,6 +22,7 @@
 
 [core]
 	pager = 
+	attributesfile = ~/.gitattributes
 	excludesfile = ~/.cvsignore
 
 [push]
@@ -37,6 +38,12 @@
 	history-view-vpane-position = 793
 	main-window-view = HistoryView
 	file-view-vpane-position = 1023
+
+[diff "pdf"]
+	textconv = pdf2stdout.sh
+
+[diff "docx"]
+	textconv = docx2txt.sh
 
 [include]
 	path = .gitconfig.local

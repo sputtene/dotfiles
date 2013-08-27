@@ -1,3 +1,6 @@
 *.c     diff=cpp
 *.h     diff=cpp
 *.cpp   diff=cpp
+
+*.pdf   diff=pdf
+*.docx  diff=docx
