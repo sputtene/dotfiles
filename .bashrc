@@ -195,3 +195,22 @@ export MANPAGER="/bin/sh -c \"unset PAGER ;                 \
     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>'  \
     -c 'let g:showmarks_enable=0'                           \
     -\""
+
+
+# Set random background colour for the next rxvt-unicode
+case "$TERM" in
+rxvt-unicode*)
+    case "$(expr $$ % 6)" in
+        0) color="orange"   ;;
+        1) color="red"      ;;
+        2) color="green"    ;;
+        3) color="cyan"     ;;
+        4) color="magenta"  ;;
+        5) color="HotPink"  ;;
+        *) ;;
+    esac
+    echo "Rxvt*tintColor: $color" | xrdb -merge -
+    ;;
+*)
+    ;;
+esac
