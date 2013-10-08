@@ -5,3 +5,5 @@ background: none
 ! when I just want to maximize it.
 session.screen0.titlebar.left:  Stick Close MenuIcon
 session.screen0.titlebar.right: Minimize Maximize
+
+toolbar.clock.font: Envy Code R-9:bold
