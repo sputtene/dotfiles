@@ -100,12 +100,12 @@
 " }
 
 " Vim UI {
-    " set color scheme {
+    " set color scheme and font {
         if has("gui_running")
             if has("win32") || has("win64")
                 set guifont=Envy_Code_R:h10
             else
-                set guifont=Envy\ Code\ R\ 8
+                set guifont=Envy\ Code\ R\ 9
             endif
             colorscheme darkblue2
         else
@@ -237,6 +237,15 @@
     "set matchpairs+=<:>                " match, to be used with %
     set pastetoggle=<F2>            " pastetoggle (sane indentation on pastes)
     "set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
+" }
+
+" Printing {
+    " TODO: unify font specification for guifont and printfont
+    if has("win32") || has("win64")
+        set printfont=Envy_Code_R:h10
+    else
+        set printfont=Envy\ Code\ R\ 8
+    endif
 " }
 
 " Key (re)Mappings {
