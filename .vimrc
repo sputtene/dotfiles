@@ -10,6 +10,9 @@
 "   Edited heavily by Sven Putteneers.
 " }
 
+" Temporarily disable CSApprox until I have a nice color scheme
+let g:CSApprox_loaded = 1
+
 " Environment {
     " Basics {
         set nocompatible        " must be first line
