@@ -7,30 +7,35 @@ use 5.010;
 
 # Load some plugins
 load_plugin qw(
-	LexEnv
-	History
-	Colors
+    LexEnv
+    History
+    Colors
 );
 
 load_plugin qw(
-	MultiLine::PPI
-	Packages
-	FancyPrompt
+    MultiLine::PPI
+    Packages
+    FancyPrompt
 );
 
-
-#load_plugin qw(
-#	ReadLineHistory -> can't use this, because of incompatible version of Term::ReadLine
-#);
 
 load_plugin qw(
-	Completion
-	CompletionDriver::Globals
-	CompletionDriver::INC
-	CompletionDriver::Keywords
-	CompletionDriver::LexEnv
-	CompletionDriver::Methods
+    ReadLineHistory
 );
+
+load_plugin qw(
+    Completion
+    CompletionDriver::Globals
+    CompletionDriver::INC
+    CompletionDriver::Keywords
+    CompletionDriver::LexEnv
+    CompletionDriver::Methods
+);
+
+load_plugin qw(
+    DDP
+);
+$_REPL->normal_color("reset");
 
 # Simplify prompt
 package main;
