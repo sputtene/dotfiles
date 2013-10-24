@@ -4,6 +4,6 @@ background: none
 ! Move close button to the left to prevent accidentially closing the window
 ! when I just want to maximize it.
 session.screen0.titlebar.left:  Stick Close MenuIcon
-session.screen0.titlebar.right: Minimize Maximize
+session.screen0.titlebar.right: LHalf RHalf Minimize Maximize
 
-toolbar.clock.font: Envy Code R-9:bold
+toolbar.clock.font: Envy Code R-9
