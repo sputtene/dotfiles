@@ -57,8 +57,8 @@ Rxvt*geometry:  132x30
 Rxvt*color0:    #000000
 Rxvt*color1:    #AA0000
 Rxvt*color2:    #00AA00
-Rxvt*color3:    #AA5500
-Rxvt*color4:    #0000AA
+!Rxvt*color3:   #AA5500
+Rxvt*color4:    #0000FF
 Rxvt*color5:    #AA00AA
 Rxvt*color6:    #00AAAA
 Rxvt*color7:    #AAAAAA
