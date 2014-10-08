@@ -108,7 +108,7 @@ Control Help    :Exec sudo s2disk
 # Commands
 Mod4 C  :Exec x-terminal-emulator
 Mod4 F  :Exec thunar
-Mod4 L  :Exec xautolock -locknow
+Mod4 L  :Exec echo 5 > ${HOME}/.lock_blank_timeout ; xautolock -locknow
 Mod4 O  :Exec firefox "`xclip -o`"
 Shift Mod4 O    :Exec links2 -g "`xclip -o`"
 Mod4 R  :Exec fbrun

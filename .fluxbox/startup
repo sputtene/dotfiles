@@ -47,7 +47,7 @@ xset r rate 300 100 # Fast keyboard repeat rate
 
 # Screen saver
 xset dpms $((11 * 60)) 0 $((15 * 60))   # blank screen after 11min (gives 1min grace period before screen gets locked); turn off screen after 15min
-xautolock -locker lock_screen.sh -nowlocker lock_screen.sh -corners 0+-0 -time 12 & # automatically lock screen after 12 minutes of inactivity
+xautolock -detectsleep -locker lock_screen.sh -nowlocker lock_screen.sh -corners 0+-0 -time 12 & # automatically lock screen after 12 minutes of inactivity
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
