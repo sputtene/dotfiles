@@ -170,6 +170,14 @@ let g:CSApprox_loaded = 1
     set showmatch                   " show matching brackets/parenthesis
     set winminheight=0              " windows can be 0 line high
 
+    " visual cue for reasonable line length
+    highlight ColorColumn ctermbg=52 guibg=#5f0000
+    if exists('+colorcolumn')
+        set colorcolumn=80
+    else
+        au BufWinEnter * let w:m2=matchadd('ColorColumn', '\%>80v.\+', -1)
+    endif
+
     set incsearch       " find as you type search
     set hlsearch        " highlight search terms
     set ignorecase      " case insensitive search
@@ -437,6 +445,7 @@ let g:CSApprox_loaded = 1
         autocmd FileType man
             \ setlocal nonumber |
             \ setlocal foldcolumn=0 |
+            \ setlocal colorcolumn= |
             \ let $MANPAGER=""
 
         " Muttng
