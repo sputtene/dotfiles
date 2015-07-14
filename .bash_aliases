@@ -13,3 +13,6 @@ alias git='_git() { if [ `pwd` == "$HOME" ] ; then `which git` --git-dir=$HOME/.
 # Aso, more responsive tail -f
 alias head='head -n $(($LINES - 2))'
 alias tail='tail -n $(($LINES - 2)) -s.1'
+
+# Simple graphical browser
+alias glinks='links2 -g'
