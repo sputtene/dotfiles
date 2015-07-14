@@ -1,7 +1,10 @@
 # Set default font to a reasonable size
 style "font"
 {
-	font_name = "Verdana 8"
+    font_name = "Verdana 8"
 }
 widget_class "*" style "font"
 gtk-font-name="Verdana 8"
+
+# Disable click sounds
+gtk-enable-input-feedback-sounds=0
