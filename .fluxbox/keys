@@ -88,8 +88,8 @@ Mod4 F11 :Workspace 11
 Mod4 F12 :Workspace 12
 
 # Screenshots
-None Print :Exec scrot -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
-Control Print :Exec scrot -b -u -e 'mv $f ~/screenshots/' ; xmessage 'screenshot done'
+None Print :Exec scrot -e 'mv $f ~/screenshots/' ; xmessage 'Full screenshot done'
+Control Print :Exec scrot -b -u -e 'mv $f ~/screenshots/' ; xmessage 'Window screenshot done'
 
 # Backlight brightness
 # My backlight has a strange way of incrementing/decrementing. The actual step size is 12.5%.
