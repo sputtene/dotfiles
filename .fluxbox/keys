@@ -101,7 +101,8 @@ None XF86MonBrightnessDown  :Exec xbacklight -dec 10 -time 0 -steps 1
 # Power management
 #None Help  :Exec sudo pm-suspend
 #Control Help   :Exec sudo pm-suspend-hybrid
-None Help   :Exec sudo s2ram -f
+#None Help  :Exec sudo s2ram -f
+None Help   :Exec xset dpms force off
 Shift Help  :Exec sudo s2both
 Control Help    :Exec sudo s2disk
 
