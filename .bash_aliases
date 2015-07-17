@@ -16,3 +16,7 @@ alias tail='tail -n $(($LINES - 2)) -s.1'
 
 # Simple graphical browser
 alias glinks='links2 -g'
+
+# Kindle USB networking
+alias kindle_un='sudo ifconfig usb0 192.168.15.201'
+alias kindle_ssh='ssh root@192.168.15.244'
