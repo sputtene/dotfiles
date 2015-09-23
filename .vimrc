@@ -498,7 +498,11 @@ function! IndentGuides(create)
     " Don't perform conversion on Makefiles either, \t really matters!
     if (!&modifiable || &readonly
             \ || (&filetype == "automake") || (&filetype == "make")
-            \ || (&filetype == "diff"))
+            \ || (&filetype == "diff") || (&filetype == "cpp")
+            \ || (&filetype == "c")
+            \ || (&filetype == "gitconfig") || (&filetype == "gitcommit")
+            \ || (&filetype == "gitolite") || (&filetype == "sh")
+            \ || (&filetype == "wiki"))
         return
     endif
 
