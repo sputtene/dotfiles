@@ -8,7 +8,10 @@
 
 # Don't ignore my personal bin/ dir. I keep some scripts there
 # that are referenced by my dotfiles
+# Do ignore scripts that are not desirable everywhere or contain sensitive
+# information
 !bin/
+bin/vpn_*
 
 # Ignore this repo otherwise the universe might implode :)
 .dotfiles.git/
