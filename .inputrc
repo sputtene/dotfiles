@@ -1,6 +1,0 @@
-# Vi keybindings :D
-set editing-mode vi
-
-# Don't page tab completion results if they don't fit on a single screen
-set page-completions off
-
