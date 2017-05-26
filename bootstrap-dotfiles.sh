@@ -2,7 +2,7 @@
 
 # Preventive maintenance, so the bootstrap script can be executed multiple
 # times without errors.
-rm -f .dotfiles.git dotfiles.git
+rm -Rf .dotfiles.git dotfiles.git
 
 # Get the dotfiles repo
 git clone --bare https://github.com/sputtene/dotfiles.git
