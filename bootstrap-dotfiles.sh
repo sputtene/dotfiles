@@ -55,3 +55,5 @@ $GIT --git-dir="$(pwd)/.dotfiles.git/" --work-tree="$(pwd)" submodule update --i
 echo "source ~/.bash_aliases" >> ~/.bashrc
 source .bash_aliases
 
+# Show status of dotfiles
+$GIT --git-dir="$(pwd)/.dotfiles.git/" --work-tree="$(pwd)" status
