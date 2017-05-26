@@ -5,6 +5,7 @@
 .*.local
 .*.bak
 .*.orig
+.*.log
 
 *.local
 
