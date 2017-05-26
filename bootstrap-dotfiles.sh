@@ -36,7 +36,7 @@ popd
 rm -R dotfiles_files dotfiles_tmp
 
 # Fetch submodules
-git --git-dir=../.dotfiles.git/ --work-tree=. submodule update --init
+git --git-dir=./.dotfiles.git/ --work-tree=. submodule update --init
 
 
 # Load new aliases. The `git` command is aliased so it works with the dotfiles setup.
