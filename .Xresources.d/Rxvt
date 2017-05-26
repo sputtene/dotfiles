@@ -32,6 +32,7 @@ Rxvt*fading:        40
 
 ! fonts
 Rxvt*letterSpace:   -2
+!Rxvt*letterSpace:  -1
 
 Rxvt*font:          xft:Envy Code R-9:style=Regular,xft:Monospace-9:Everson Mono-11:style=Regular
 Rxvt*boldFont:      xft:Envy Code R-9:style=Bold,xft:Monospace-9:style=Bold,xft:Everson Mono-9:style=Bold
