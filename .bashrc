@@ -183,6 +183,7 @@ export EDITOR=vim
 # Set up perlbrew environment
 PERLBREW="$HOME/perl5/perlbrew/etc/bashrc"
 [ -r "$PERLBREW" ] && source $PERLBREW
+[ -r "$PERLBREW" ] && source "$HOME/perl5/perlbrew/etc/perlbrew-completion.bash"
 
 
 # Use Vim as man pager
