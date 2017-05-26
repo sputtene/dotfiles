@@ -57,7 +57,7 @@ bin/vpn_*
 .gconf/
 .gconfd/
 .gegl-0.0/
-.gimp-2.6/
+.gimp-*/
 .gitk
 .googleearth/
 .goutputstream-*
