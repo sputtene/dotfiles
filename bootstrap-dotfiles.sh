@@ -4,8 +4,11 @@
 # times without errors.
 rm -Rf .dotfiles.git dotfiles.git
 
+GIT="$(which git)"
+
+
 # Get the dotfiles repo
-git clone --bare https://github.com/sputtene/dotfiles.git
+$GIT clone --bare https://github.com/sputtene/dotfiles.git
 mv dotfiles.git .dotfiles.git
 
 mkdir dotfiles_files
@@ -13,8 +16,8 @@ mkdir dotfiles_tmp
 
 pushd dotfiles_files
 
-git --git-dir=../.dotfiles.git/ --work-tree=. status
-git --git-dir=../.dotfiles.git/ --work-tree=. reset --hard
+#$GIT --git-dir=../.dotfiles.git/ --work-tree=. status
+$GIT --git-dir=../.dotfiles.git/ --work-tree=. reset --hard
 
 # Save already existing files before temporarily overwriting them with the
 # corresponding files from the repo.
@@ -40,8 +43,9 @@ popd
 
 rm -R dotfiles_files dotfiles_tmp
 
-# Fetch submodules
-git --git-dir=./.dotfiles.git/ --work-tree=. submodule update --init
+# Fetch submodules. The value of the --git-dir option must be an absolute path
+# or 
+$GIT --git-dir="$(pwd)/.dotfiles.git/" --work-tree="$(pwd)" submodule update --init --checkout
 
 
 # Load new aliases. The `git` command is aliased so it works with the dotfiles setup.
