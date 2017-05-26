@@ -23,4 +23,4 @@ alias kindle_ssh='ssh root@192.168.15.244'
 
 # Perl local::lib easy syntax
 # See http://blogs.perl.org/users/aristotle/2015/12/locallib-ez.html
-alias perl-locallib='_perl_locallib() { eval "`perl -M'local::lib @ARGV' - "$@" 1<&-`" ; }; _perl_locallib'
+#alias perl-locallib='_perl_locallib() { eval "`perl -M\'local::lib @ARGV\' - "$@" 1<&-`" ; }; _perl_locallib'
