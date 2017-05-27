@@ -41,6 +41,8 @@ update-notifier &   # too lazy to check for software updates myself ;)
 tilda &             # FPS alike console
 pnmixer &
 gtk-redshift &      # change screen colour temperature with time of the day
+keepass2 &
+(perlbrew off ; shutter --min_at_startup) &		# Screenshot utility. Since it's written in Perl, we start it in a shell where we ensure the system perl is active
 
 setxkbmap -model "pc105" -layout "us,be" -variant "dvorak," -option "compose:menu,grp:shifts_toggle"    # /etc/defaults/keyboard is not loaded anymore, so do this ourself
 xset r rate 300 100 # Fast keyboard repeat rate
