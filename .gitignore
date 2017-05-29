@@ -127,6 +127,7 @@ bin/vpn_*
 .xsession-errors*
 .yarssr/
 
+.wget-hsts
 
 # XDG compliant configuration location
 .config/powerline/
