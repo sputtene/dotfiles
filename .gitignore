@@ -130,3 +130,4 @@ bin/vpn_*
 
 # XDG compliant configuration location
 .config/powerline/
+.config/yad.conf
