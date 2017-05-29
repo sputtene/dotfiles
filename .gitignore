@@ -35,6 +35,8 @@ bin/vpn_*
 .cache/
 .clay/
 
+.netExtenderCerts/
+
 # unblock prefs/ ?
 .cpan/
 .cpanm/
