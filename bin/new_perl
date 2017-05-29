@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# Script borrowed from dagolden, see
+# Script borrowed from dagolden and adapted, see
 # http://www.dagolden.com/index.php/2134/how-i-manage-new-perls-with-perlbrew/
 
 use v5.10;
@@ -49,3 +49,7 @@ system( qw/perlbrew exec --with/, $lib, qw/cpanm/, @to_install ) if @to_install;
 
 # repeat to catch any circularity problems
 system( qw/perlbrew exec --with/, $lib, qw/cpanm/, @to_install ) if @to_install;
+
+# make @std local lib read-only, so we don't inadvertently install extra stuff
+# in it
+system( qw/chmod -R a-w/, "$ENV{HOME}/.perlbrew/libs/$lib" );
