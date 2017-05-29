@@ -126,3 +126,7 @@ bin/vpn_*
 .tilda/locks/
 .xsession-errors*
 .yarssr/
+
+
+# XDG compliant configuration location
+.config/powerline/
