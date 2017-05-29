@@ -3,8 +3,24 @@
 # Easy editing of this file: http://www.modernperlbooks.com/mt/2009/10/remove-the-little-pessimizations.html
 alias realias='$EDITOR ~/.bash_aliases; source ~/.bash_aliases'
 
+# Colorize standard commands
+alias ls='ls --color=auto -a -F'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # Always colour my diffs
 alias diff='colordiff'
+
+
+# Syntax highlighting
+alias hl='highlight --out-format xterm256 --style relaxedgreen'
+
+
+# Add an "alert" alias for long running commands.  Use like so:↲
+#   sleep 10; alert↲
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'↲
 
 # When invoking git in my homedir, act on my dotfiles repo
 alias git='_git() { if [ `pwd` == "$HOME" ] ; then `which git` --git-dir=$HOME/.dotfiles.git --work-tree=$HOME "$@" ; else `which git` "$@"; fi }; _git'
