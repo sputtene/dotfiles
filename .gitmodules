@@ -8,7 +8,7 @@
     ignore = dirty
 [submodule ".vim/bundle/ShowMarks"]
     path = .vim/bundle/ShowMarks
-    url = https://github.com/vim-scripts/ShowMarks.git
+    url = https://github.com/xsunsmile/showmarks.git
     ignore = dirty
 [submodule ".vim/bundle/Vim-R-plugin"]
     path = .vim/bundle/Vim-R-plugin
