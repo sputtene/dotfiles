@@ -79,7 +79,9 @@ bin/vpn_*
 .libreoffice/
 .links2/
 .local/
+.kodi/
 .macromedia/
+.mediatomb/
 .mission-control/
 .mozilla/
 .nv/
@@ -106,6 +108,7 @@ bin/vpn_*
 .sane/
 .smbc/
 .ssh/
+.sonicwall/
 .subversion/
 .sudo_as_admin_successful
 .synaptic/
