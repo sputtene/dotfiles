@@ -308,6 +308,7 @@ let g:CSApprox_loaded = 1
 
 " Plugins {
      " FuzzyFinder {
+        let g:fuf_dataDir = '~/.vim/fuzzy_finder'
          map <leader>f :FufFileWithCurrentBufferDir **/<C-M>
          map <leader>b :FufBuffer<C-M>
      " }

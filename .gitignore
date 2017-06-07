@@ -122,6 +122,7 @@ bin/vpn_*
 .vim/swap/
 .vim/views/
 .viminfo
+.vim/fuzzy_finder/
 
 .virt-manager/
 .wicd/
