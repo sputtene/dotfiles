@@ -6,10 +6,6 @@
     path = .vim/bundle/SearchComplete
     url = https://github.com/vim-scripts/SearchComplete.git
     ignore = dirty
-[submodule ".vim/bundle/ShowMarks"]
-    path = .vim/bundle/ShowMarks
-    url = https://github.com/xsunsmile/showmarks.git
-    ignore = dirty
 [submodule ".vim/bundle/Vim-R-plugin"]
     path = .vim/bundle/Vim-R-plugin
     url = https://github.com/vim-scripts/Vim-R-plugin.git
@@ -86,3 +82,6 @@
 	path = .vim/bundle/powerline
 	url = https://github.com/Lokaltog/powerline.git
     ignore = dirty
+[submodule ".vim/bundle/vim-markology"]
+	path = .vim/bundle/vim-markology
+	url = https://github.com/jeetsukumaran/vim-markology.git
