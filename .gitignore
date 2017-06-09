@@ -34,6 +34,7 @@ bin/vpn_*
 .bash_history
 .cache/
 .clay/
+.davfs2/
 
 .netExtenderCerts/
 
@@ -42,6 +43,7 @@ bin/vpn_*
 # unblock prefs/ ?
 .cpan/
 .cpanm/
+.cpanplus/
 .cups/
 .dbus/
 .dmrc
@@ -140,6 +142,7 @@ bin/vpn_*
 
 .config/Google/
 .config/Skype/
+.config/Thunar/
 .config/Trolltech.conf
 .config/audacious/
 .config/autostart/
@@ -148,14 +151,22 @@ bin/vpn_*
 .config/dconf/
 .config/enchant/
 .config/evince/
+.config/fontconfig/
+.config/fontgroups.xml
 .config/font-manager/
 .config/gedit/
+.config/gnome-mplayer/
 .config/gtk-2.0/
 .config/gtk-3.0/bookmarks
 .config/ibus/
+.config/menus/
 .config/mimeapps.list
+.config/nautilus/
 .config/pavucontrol.ini
+.config/pnmixer/
+.config/pulse/
 .config/software-center/
+.config/totem/
 .config/tracker/
 .config/update-notifier/
 .config/vlc/
