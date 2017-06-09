@@ -37,6 +37,8 @@ bin/vpn_*
 
 .netExtenderCerts/
 
+.config/KeePass*
+
 # unblock prefs/ ?
 .cpan/
 .cpanm/
@@ -134,6 +136,29 @@ bin/vpn_*
 .yarssr/
 
 .wget-hsts
+
+
+.config/Google/
+.config/Skype/
+.config/Trolltech.conf
+.config/audacious/
+.config/autostart/
+.config/brasero/
+.config/compiz-1/
+.config/dconf/
+.config/enchant/
+.config/evince/
+.config/font-manager/
+.config/gedit/
+.config/gtk-2.0/
+.config/ibus/
+.config/mimeapps.list
+.config/pavucontrol.ini
+.config/software-center/
+.config/tracker/
+.config/update-notifier/
+.config/vlc/
+
 
 # XDG compliant configuration location
 .config/powerline/
