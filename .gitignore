@@ -151,6 +151,7 @@ bin/vpn_*
 .config/font-manager/
 .config/gedit/
 .config/gtk-2.0/
+.config/gtk-3.0/bookmarks
 .config/ibus/
 .config/mimeapps.list
 .config/pavucontrol.ini
