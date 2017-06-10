@@ -32,6 +32,7 @@ bin/vpn_*
 .apport-ignore.xml
 .audacity-data/
 .bash_history
+.byobu/
 .cache/
 .clay/
 .davfs2/
@@ -41,6 +42,7 @@ bin/vpn_*
 .config/KeePass*
 
 # unblock prefs/ ?
+.ansible/
 .cpan/
 .cpanm/
 .cpanplus/
@@ -87,6 +89,7 @@ bin/vpn_*
 .macromedia/
 .mediatomb/
 .mission-control/
+.mitmproxy/
 .mozilla/
 .nv/
 .nvidia-settings-rc
@@ -137,6 +140,7 @@ bin/vpn_*
 .xsession-errors*
 .yarssr/
 
+.psql_history
 .wget-hsts
 
 
@@ -155,6 +159,7 @@ bin/vpn_*
 .config/fontgroups.xml
 .config/font-manager/
 .config/gedit/
+.config/geeqie/
 .config/gnome-mplayer/
 .config/gtk-2.0/
 .config/gtk-3.0/bookmarks
