@@ -159,6 +159,8 @@
 .config/audacious/
 .config/autostart/
 .config/brasero/
+.config/calibre/
+.config/chromium/
 .config/compiz-1/
 .config/dconf/
 .config/deluge/
