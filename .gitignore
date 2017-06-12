@@ -22,6 +22,7 @@
 
 # Don't consider the following files. They contain sensitive
 # information or information that is only relevant locally.
+.AMD/
 .AbiSuite/
 .FBReader/
 .ICEauthority
@@ -53,6 +54,7 @@
 .dvdcss/
 .ecryptfs
 .esd_auth
+.everpad/
 .fehbg
 
 .fluxbox/*
@@ -66,11 +68,13 @@
 .gconf/
 .gconfd/
 .gegl-0.0/
+.gftp/
 .gimp-*/
 .gitk
 .googleearth/
 .goutputstream-*
 .gksu.lock
+.gnome/
 .gnome2/
 .gnupg/
 .gnuplot_history
@@ -80,6 +84,7 @@
 .ibam/
 .icedtea/
 .icedteaplugin/
+.irssi/
 .java/
 .lesshst
 .lftp/
@@ -91,6 +96,7 @@
 .mediatomb/
 .mission-control/
 .mitmproxy/
+.mono/
 .mozilla/
 .nv/
 .nvidia-settings-rc
@@ -145,6 +151,7 @@
 .wget-hsts
 
 
+.config/.mono/
 .config/Google/
 .config/Skype/
 .config/Thunar/
@@ -154,6 +161,7 @@
 .config/brasero/
 .config/compiz-1/
 .config/dconf/
+.config/deluge/
 .config/enchant/
 .config/evince/
 .config/fontconfig/
@@ -165,12 +173,16 @@
 .config/gtk-2.0/
 .config/gtk-3.0/bookmarks
 .config/ibus/
+.config/icedtea-web/
+.config/libaccounts-glib/
+.config/libreoffice/
 .config/menus/
 .config/mimeapps.list
 .config/nautilus/
 .config/pavucontrol.ini
 .config/pnmixer/
 .config/pulse/
+.config/smplayer2/
 .config/software-center/
 .config/totem/
 .config/tracker/
