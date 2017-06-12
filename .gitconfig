@@ -28,6 +28,9 @@
 [push]
 	default = tracking
 
+[status]
+    showUntrackedFiles = all
+
 [alias]
 	wdiff = diff --color-words
 	l = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr) %C(bold white)<%an>%Creset' --abbrev-commit --date=relative
