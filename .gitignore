@@ -74,6 +74,7 @@
 .gitk
 .googleearth/
 .goutputstream-*
+.gkrellm2/data/
 .gksu.lock
 .gnome/
 .gnome2/
