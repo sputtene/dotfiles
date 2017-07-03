@@ -15,7 +15,7 @@ alias diff='colordiff'
 
 
 # Syntax highlighting
-alias hl='highlight --out-format xterm256 --style relaxedgreen'
+alias hl='highlight --out-format xterm256 --style navy'
 
 
 # Add an "alert" alias for long running commands.  Use like so:↲
