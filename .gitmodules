@@ -85,3 +85,6 @@
 [submodule ".vim/bundle/vim-markology"]
 	path = .vim/bundle/vim-markology
 	url = https://github.com/jeetsukumaran/vim-markology.git
+[submodule ".vim/bundle/editorconfig-vim"]
+	path = .vim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
