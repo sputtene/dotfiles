@@ -1,6 +1,13 @@
+# Get system-wide configuration. This usually includes some goodies
+$include /etc/inputrc
+
 # Vi keybindings :D
 set editing-mode vi
 
 # Don't page tab completion results if they don't fit on a single screen
 set page-completions off
 
+
+# Borrowed from https://www.topbug.net/blog/2017/07/31/inputrc-for-humans/
+set colored-stats On
+set visible-stats On
