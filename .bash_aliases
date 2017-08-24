@@ -23,7 +23,7 @@ alias hl='highlight --out-format xterm256 --style navy'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # When invoking git in my homedir, act on my dotfiles repo
-alias git='_git() { if [ `pwd` == "$HOME" ] ; then `which git` --git-dir=$HOME/.dotfiles.git --work-tree=$HOME "$@" ; else `which git` "$@"; fi }; _git'
+alias git='_git() { if [ `pwd` == "$HOME" ] ; then command git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME "$@" ; else command git "$@"; fi }; _git'
 
 # Make head and tail use available screen size
 # Aso, more responsive tail -f
