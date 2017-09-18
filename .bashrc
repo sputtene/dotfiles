@@ -165,6 +165,14 @@ setxkbmap -model "$XKBMODEL" -layout "$XKBLAYOUT" -variant "$XKBVARIANT" -option
 xmodmap ~/.Xmodmap
 fi
 
+# Activate bash magic if it is installed. See https://github.com/hbekel/magic
+bash_magic='/usr/lib/magic/magic'
+if [ -r "$bash_magic" ]; then
+    PROMPT_COMMAND="$PROMPT_COMMAND; source $bash_magic"
+fi
+unset bash_magic
+
+
 ## TODO: move these to a devel_mode() function
 # for developing: http://udrepper.livejournal.com/11429.html
 export MALLOC_CHECK_=3
