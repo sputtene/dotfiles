@@ -503,7 +503,7 @@ function! IndentGuides(create)
             \ || (&filetype == "c")
             \ || (&filetype == "gitconfig") || (&filetype == "gitcommit")
             \ || (&filetype == "gitolite") || (&filetype == "sh")
-            \ || (&filetype == "wiki"))
+            \ || (&filetype == "wiki") || (&filetype == "yaml"))
         return
     endif
 
