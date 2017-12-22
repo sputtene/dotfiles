@@ -82,7 +82,7 @@ _update_prompt () {
     local suf="\]";
 
     # public values
-    GREEN="${pre}0;${green}m$suf";
+    GREEN="${pre}${green}m$suf";
     BGREEN="${pre}$green;1m$suf";
     BLUE="${pre}0;${blue}m$suf";
     BBLUE="${pre}$blue;1m$suf";
@@ -95,7 +95,7 @@ _update_prompt () {
     YELLOW="${pre}0;${yellow}m$suf";
     BYELLOW="$pre$yellow;1m$suf";
 
-    NORMAL="\[\e[0;0m\]";
+    NORMAL="${pre}22;39m${suf}";
 
     local color_prompt="yes"
     local bul="\$" # make this a # for root
