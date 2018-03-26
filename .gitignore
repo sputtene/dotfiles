@@ -47,6 +47,7 @@
 
 # unblock prefs/ ?
 .ansible/
+.ansible-console_history
 .cpan/
 .cpanm/
 .cpanplus/
@@ -55,6 +56,8 @@
 .dmrc
 .dvdcss/
 .ecryptfs
+.elinks/bookmarks
+.elinks/globhist
 .esd_auth
 .everpad/
 .fehbg
@@ -101,6 +104,11 @@
 .mitmproxy/
 .mono/
 .mozilla/
+.my.cnf
+.mycli-history
+.mysql_history
+.perlreplhist
+.php_history
 .nv/
 .nvidia-settings-rc
 .openarena/
@@ -119,6 +127,7 @@
 .pulse/
 .pulse-cookie
 .purple/
+.python-eggs/
 .qt/
 .remmina/
 .rpmdb/
