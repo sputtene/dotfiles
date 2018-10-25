@@ -450,7 +450,8 @@ let g:CSApprox_loaded = 1
             \ setlocal colorcolumn= |
             \ let $MANPAGER=""
 
-        " Muttng
+        " Mutt/Muttng
+        autocmd BufNewFile,BufRead mutt-*-\d\+-\d\+-\d\+ setf mail
         autocmd BufNewFile,BufRead muttng-*-\w\+,muttng\w\{6\} setf mail
         autocmd BufNewFile,BufRead muttngrc* setf muttrc
 
