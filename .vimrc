@@ -110,14 +110,15 @@ let g:CSApprox_loaded = 1
             else
                 set guifont=Envy\ Code\ R\ 9
             endif
-            colorscheme darkblue2
+            colorscheme darkblue
         else
             "colorscheme matrix
-            colorscheme darkblue2
+            colorscheme darkblue
+            set background=dark
         endif
 
         " Manually perfect some highlighting aspects
-        highlight Comment   cterm=italic gui=italic                                 " Italic comments :D
+        highlight Comment   cterm=italic gui=italic ctermfg=cyan                    " Italic comments :D
         highlight ToDo      term=bold cterm=bold ctermfg=White ctermbg=DarkRed      " Make TODO's, FIXME's, XXX's stand out a bit more
 
         highlight VertSplit term=NONE cterm=NONE gui=NONE                           " Unfatten vertical split lines
@@ -215,7 +216,7 @@ let g:CSApprox_loaded = 1
 
     set list            " show various invisible markers
     if ((&termencoding ==# 'utf-8') || (&encoding == "utf-8") || has("gui_running"))
-        let &listchars="tab:\u2506\ ,trail:\u2022,extends:\u2026,eol:\u21b2,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
+        let &listchars="tab:\u2502\ ,trail:\u2022,extends:\u2026,eol:\u21b2,nbsp:\u2017,precedes:\u00ab,extends:\u00bb"
         let &fillchars="vert:\u2502,fold:\u257c"
         let &showbreak="\u2026   "
     else
