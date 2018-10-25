@@ -225,3 +225,9 @@ rxvt-unicode*)
 *)
     ;;
 esac
+
+
+# Undo "let's break tradition and quote filenames with spaces" silliness,
+# introduced in coreutils 8.25.
+# https://unix.stackexchange.com/questions/258679#comment455705_258679
+export QUOTING_STYLE=literal
