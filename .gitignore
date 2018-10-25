@@ -47,7 +47,9 @@
 
 # unblock prefs/ ?
 .ansible/
+.ansible_galaxy
 .ansible-console_history
+.calendars/
 .cpan/
 .cpanm/
 .cpanplus/
@@ -61,6 +63,7 @@
 .esd_auth
 .everpad/
 .fehbg
+.fim_history
 
 .fluxbox/*
 !.fluxbox/keys
@@ -98,12 +101,15 @@
 .links2/
 .local/
 .kodi/
+.m2/
 .macromedia/
+.mail/
 .mediatomb/
 .mission-control/
 .mitmproxy/
 .mono/
 .mozilla/
+.mutt/message_cache/
 .my.cnf
 .mycli-history
 .mysql_history
@@ -111,6 +117,7 @@
 .php_history
 .nv/
 .nvidia-settings-rc
+.offlineimap/
 .openarena/
 .opera/
 .openvpn/
@@ -128,10 +135,13 @@
 .pulse-cookie
 .purple/
 .python-eggs/
+.python_history
+.pycharm_helpers/
 .qt/
 .remmina/
 .rpmdb/
 .sane/
+.scummvm*
 .smbc/
 .ssh/
 .sonicwall/
@@ -141,6 +151,8 @@
 .thumbnails/
 .thunderbird/
 .tsclient/
+
+.vdirsyncer/
 
 .vim/.netrwhist
 .vim/backup/
@@ -155,6 +167,7 @@
 .wine/
 .wmpiki
 .wmWeatherReports/
+.texmf-var/
 .tilda/locks/
 .xsession-errors*
 .yarssr/
