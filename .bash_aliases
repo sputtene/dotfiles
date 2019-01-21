@@ -16,6 +16,7 @@ alias diff='colordiff'
 
 # Syntax highlighting
 alias hl='highlight --out-format xterm256 --style navy'
+alias json_pretty='python -m json.tool | hl --syntax=json'
 
 
 # Add an "alert" alias for long running commands.  Use like so:↲
@@ -40,3 +41,5 @@ alias kindle_ssh='ssh root@192.168.15.244'
 # Perl local::lib easy syntax
 # See http://blogs.perl.org/users/aristotle/2015/12/locallib-ez.html
 #alias perl-locallib='_perl_locallib() { eval "`perl -M\'local::lib @ARGV\' - "$@" 1<&-`" ; }; _perl_locallib'
+
+alias nd='mono /opt/Natural\ Docs/NaturalDocs.exe'
