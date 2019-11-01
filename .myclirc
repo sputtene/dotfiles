@@ -33,7 +33,7 @@ timing = True
 # Table format. Possible values: psql, plain, simple, grid, fancy_grid, pipe,
 # orgtbl, rst, mediawiki, html, latex, latex_booktabs, tsv.
 # Recommended: psql, fancy_grid and grid.
-table_format = pipe
+table_format = psql
 
 # Syntax Style. Possible values: manni, igor, xcode, vim, autumn, vs, rrt,
 # native, perldoc, borland, tango, emacs, friendly, monokai, paraiso-dark,
@@ -55,10 +55,6 @@ wider_completion_menu = True
 # \d - Database name
 # \n - Newline
 prompt = '\t \u@\h:\d> '
-
-# Cause result sets to be displayed vertically if they are too wide for the current window,
-# and using normal tabular format otherwise. (This applies to statements terminated by ; or \G.)
-auto_vertical_output = False
 
 # Custom colors for the completion menu, toolbar, etc.
 [colors]
