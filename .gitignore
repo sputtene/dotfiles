@@ -115,6 +115,7 @@
 .mysql_history
 .perlreplhist
 .php_history
+.npm/
 .nv/
 .nvidia-settings-rc
 .offlineimap/
@@ -220,3 +221,5 @@
 # XDG compliant configuration location
 .config/powerline/
 .config/yad.conf
+
+
